@@ -22,6 +22,7 @@ export class PokelistComponent implements OnInit {
       this.pokeModel = response.data.results
       for (var i = 1; i< this.pokeModel.length+1; i++) {
           this.pokeModel[i-1].img = "https://rawgit.com/PokeAPI/sprites/master/sprites/pokemon/" + i + ".png"
+          this.pokeModel[i-1].id = i;
       }
       console.log(this.x)
       console.log(this.pokeModel)

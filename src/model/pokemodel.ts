@@ -1,5 +1,5 @@
 export class Pokemodel {
-    id: null
+    id: any
     name: null
     url: null
     img : string
